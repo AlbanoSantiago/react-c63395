@@ -11,10 +11,10 @@ function App() {
 
   return (
       <div>
-      <NavBar />
-      <Banner />
-      <h1 style={ estilosh1 } >Hola Mundo!</h1>
-            <h2>Tema: {saludo}</h2>
+        <NavBar />
+        <Banner />
+        <h1 style={ estilosh1 } >Hola Mundo!</h1>
+        <h2>Tema: {saludo}</h2>
       </div>
     )
 }
