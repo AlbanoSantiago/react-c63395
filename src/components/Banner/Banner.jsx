@@ -4,7 +4,7 @@ const Banner = () => {
 
     return(
         <div>
-            <img width={"20%"} src={bannerImage} alt="" />
+            <img width={"30%"} src={bannerImage} alt="" />
 
         </div>
     )
