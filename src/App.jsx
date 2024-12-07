@@ -1,21 +1,25 @@
+import Banner from './components/ejemplos/Banner'
+import lutaImage from "./assets/lutabanner.png"
+import EjemploContador from './components/ejemplos/ejemploContador'
+
 import './App.css'
-//import NavBar from "./components/NavBar"
-import Banner from "./components/Banner/Banner"
-import { NavBar, saludo } from "./components/Navbar/NavBar"
 
-function App() {
- 
-  const condicion = false
 
-  const estilosh1 = { color: condicion === true ? "purple" : "red", fontSize: "50px" }
-
+function App ()  {
+  const saludando = () => {
+    alert("saludos desde App")
+  }
+  
+  
   return (
-      <div>
-        <NavBar />
-        <Banner />
-        <h1 style={ estilosh1 } >Hola Mundo!</h1>
-        <h2>Tema: {saludo}</h2>
-      </div>
-    )
+    <> 
+      <Banner saludando={saludando} saludo = {"Banner1"} urlImage={"https://img.freepik.com/premium-photo/explore-now-bold-nike-running-shoes-banner_1036975-158590.jpg?w=826"} />
+      <Banner saludando={saludando}saludo = {"Banner2"} urlImage={lutaImage}/>
+      <EjemploContador />
+    
+    </>
+      
+  )
 }
+
 export default App
